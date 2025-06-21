@@ -1,0 +1,84 @@
+/* -- reset_General -- */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* -- root variables -- */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --font-h1: 2rem;
+  --font-h2: 1.75rem;
+  --font-h3: 1.5rem;
+  --font-h4: 1.25rem;
+  --font-body: 1rem;
+  --font-small: 0.875rem;
+}
+/* -- media queries --*/
+@media (min-width: 768px) {
+  :root {
+    --font-h1: 2.5rem;
+    --font-h2: 2rem;
+    --font-h3: 1.75rem;
+    --font-h4: 1.5rem;
+    --font-body: 1.0625rem;
+    --font-small: 0.875rem;
+  }
+}
+@media (min-width: 1024px) {
+  :root {
+    --font-h1: 3rem;
+    --font-h2: 2.5rem;
+    --font-h3: 2rem;
+    --font-h4: 1.5rem;
+    --font-body: 1.125rem;
+    --font-small: 0.875rem;
+  }
+}
+@media (min-width: 1280px) {
+  :root {
+    --font-h1: 3.5rem;
+    --font-h2: 3rem;
+    --font-h3: 2.25rem;
+    --font-h4: 1.75rem;
+    --font-body: 1.125rem;
+    --font-small: 0.9rem;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+
+
+
+
+

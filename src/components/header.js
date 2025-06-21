@@ -1,7 +1,3 @@
-'use client';
-
-import { useDictionary } from '@/context/dictionaryContext';
-
 export default function HomePage() {
   const dictionary = useDictionary();
   return (

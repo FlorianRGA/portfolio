@@ -1,6 +1,6 @@
-import '../styles/globals.css';
-import { getDictionary } from './dictionaries';
-import ClientDictionaryProvider from '../provider/clientDictionaryProvider';
+import '@/styles/globals.css';
+import { getDictionary } from '@/lib/getDictionaries';
+import ClientDictionaryProvider from '@/provider/clientDictionaryProvider';
 import React from 'react';
 
 export default async function RootLayout({ children, params }) {

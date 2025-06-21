@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { DictionaryContext } from '../context/dictionaryContext';
+import { DictionaryContext } from '@/context/dictionaryContext';
 
 export default function ClientDictionaryProvider({ dictionary, children }) {
   return (

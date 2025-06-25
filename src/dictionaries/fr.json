@@ -1,6 +1,12 @@
 {
+  "firstName": "Florian",
+  "lastName": "Roche",
   "home": {
-    "title": "Florian Roche",
-    "description": "Bienvenue sur mon site web personnel"
+    "title": "Développeur Full-Stack",
+    "description": "JavaScript • React • Node.js • Next.js •  Git • APIs REST"
+  },
+  "aria_label": {
+    "theme": "Activer/désactiver le thème clair/sombre",
+    "language": "Changer de langue"
   }
 }

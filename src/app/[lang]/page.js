@@ -1,13 +1,13 @@
 'use client';
 
 import { useDictionary } from '@/context/dictionaryContext';
+import Header from '@/components/header';
 
 export default function HomePage() {
   const dictionary = useDictionary();
   return (
     <main>
-      <h1>{dictionary.home.title}</h1>
-      <h2>{dictionary.home.description}</h2>
+      <Header dictionary={dictionary} />
     </main>
   );
 }

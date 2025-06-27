@@ -1,0 +1,39 @@
+/* .toggleLanguageButton {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    border-radius: 0.7rem;
+    justify-content: space-between;
+    padding: 0.4rem;
+    width: 100%;
+    font-size: var(--font-body);
+}
+
+.svgWorld {
+    width: 2rem;
+    margin-right: 0.2rem;
+} */
+
+.container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.svgWorld {
+  width: 32px;
+  height: 32px;
+  color: white;
+  stroke: #fff;
+}
+.activeLanguage {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+.InactiveLanguage {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  opacity: 0.5;
+}
+.InactiveLanguage:hover {
+  opacity: 1;
+}

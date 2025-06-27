@@ -3,78 +3,99 @@ import Link from "next/link";
 
 export default function ToggleLanguageButton({ dictionary }) {
   return (
-    <Link
-      href={"/en"}
-      aria-label={dictionary.aria_label.language}
-      className={styles.togglelanguageButton}
-    >
+    // <Link
+    //   href={"/en"}
+    //   aria-label={dictionary.aria_label.language}
+    //   className={styles.toggleLanguageButton}
+    // >
+    //   <svg
+    //     viewBox="0 0 24 24"
+    //     fill="none"
+    //     xmlns="http://www.w3.org/2000/svg"
+    //     className={styles.svgWorld}
+    //   >
+    //     <g strokeWidth="0"></g>
+    //     <g strokeLinecap="round" strokeLinejoin="round"></g>
+    //     <g id="SVGRepo_iconCarrier">
+    //       <path
+    //         d="M2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12Z"
+    //         stroke="#fff"
+    //         strokeWidth="1.5"
+    //         strokeLinecap="round"
+    //         strokeLinejoin="round"
+    //       />
+    //       <path
+    //         d="M13 2.04932C13 2.04932 16 5.99994 16 11.9999C16 17.9999 13 21.9506 13 21.9506"
+    //         stroke="#fff"
+    //         strokeWidth="1.5"
+    //         strokeLinecap="round"
+    //         strokeLinejoin="round"
+    //       />
+    //       <path
+    //         d="M11 21.9506C11 21.9506 8 17.9999 8 11.9999C8 5.99994 11 2.04932 11 2.04932"
+    //         stroke="#fff"
+    //         strokeWidth="1.5"
+    //         strokeLinecap="round"
+    //         strokeLinejoin="round"
+    //       />
+    //       <path
+    //         d="M2.62964 15.5H21.3704"
+    //         stroke="#fff"
+    //         strokeWidth="1.5"
+    //         strokeLinecap="round"
+    //         strokeLinejoin="round"
+    //       />
+    //       <path
+    //         d="M2.62964 8.5H21.3704"
+    //         stroke="#fff"
+    //         strokeWidth="1.5"
+    //         strokeLinecap="round"
+    //         strokeLinejoin="round"
+    //       />
+    //     </g>
+    //   </svg>
+    //   FR
+    // </Link>
+    <div className={styles.container}>
       <svg
-        width="24px"
-        height="24px"
-        viewBox="0 0 36 36"
-        xmlns="http://www.w3.org/2000/svg"
-        aria-hidden="true"
+        className={styles.svgWorld}
+        viewBox="0 0 24 24"
         role="img"
-        preserveAspectRatio="xMidYMid meet"
-      >
-        <path
-          fill="#ED2939"
-          d="M36 27a4 4 0 0 1-4 4h-8V5h8a4 4 0 0 1 4 4v18z"
-        ></path>
-        <path
-          fill="#002495"
-          d="M4 5a4 4 0 0 0-4 4v18a4 4 0 0 0 4 4h8V5H4z"
-        ></path>
-        <path fill="#EEE" d="M12 5h12v26H12z"></path>
-      </svg>
-      <svg
-        height="24"
-        width="24"
-        version="1.1"
-        id="Layer_1"
         xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 512 512"
-        preserveAspectRatio="xMidYMid meet"
+        aria-labelledby="languageIconTitle"
+        strokeWidth="1"
+        strokeLinecap="square"
+        strokeLinejoin="miter"
+        fill="none"
+        color="#000000"
       >
+        <title id="languageIconTitle">Language</title>
+        <circle cx="12" cy="12" r="10" />
         <path
-          style={{ fill: "#41479B" }}
-          d="M473.655,88.276H38.345C17.167,88.276,0,105.443,0,126.621V385.38
-    c0,21.177,17.167,38.345,38.345,38.345h435.31c21.177,0,38.345-17.167,38.345-38.345V126.621
-    C512,105.443,494.833,88.276,473.655,88.276z"
+          strokeLinecap="round"
+          d="M12,22 C14.6667,19.5758 16,16.2424 16,12 
+         C16,7.7576 14.6667,4.4242 12,2 
+         C9.3333,4.4242 8,7.7576 8,12 
+         C8,16.2424 9.3333,19.5758 12,22 Z"
         />
-        <path
-          style={{ fill: "#F5F5F5" }}
-          d="M511.469,120.282c-3.022-18.159-18.797-32.007-37.814-32.007h-9.977l-163.54,107.147V88.276h-88.276
-    v107.147L48.322,88.276h-9.977c-19.017,0-34.792,13.847-37.814,32.007l139.778,91.58H0v88.276h140.309L0.531,391.717
-    c3.022,18.159,18.797,32.007,37.814,32.007h9.977l163.54-107.147v107.147h88.276V316.577l163.54,107.147h9.977
-    c19.017,0,34.792-13.847,37.814-32.007l-139.778-91.58H512v-88.276H371.691L511.469,120.282z"
-        />
-        <g>
-          <polygon
-            style={{ fill: "#FF4B55" }}
-            points="282.483,88.276 229.517,88.276 229.517,229.517 0,229.517 0,282.483 229.517,282.483 
-      229.517,423.724 282.483,423.724 282.483,282.483 512,282.483 512,229.517 282.483,229.517"
-          />
-          <path
-            style={{ fill: "#FF4B55" }}
-            d="M24.793,421.252l186.583-121.114h-32.428L9.224,410.31
-      C13.377,415.157,18.714,418.955,24.793,421.252z"
-          />
-          <path
-            style={{ fill: "#FF4B55" }}
-            d="M346.388,300.138H313.96l180.716,117.305c5.057-3.321,9.277-7.807,12.287-13.075L346.388,300.138z"
-          />
-          <path
-            style={{ fill: "#FF4B55" }}
-            d="M4.049,109.475l157.73,102.387h32.428L15.475,95.842
-      C10.676,99.414,6.749,104.084,4.049,109.475z"
-          />
-          <path
-            style={{ fill: "#FF4B55" }}
-            d="M332.566,211.862l170.035-110.375c-4.199-4.831-9.578-8.607-15.699-10.86L300.138,211.862H332.566z"
-          />
-        </g>
+        <path strokeLinecap="round" d="M2.5 9L21.5 9M2.5 15L21.5 15" />
       </svg>
-    </Link>
+
+      <Link
+        className={styles.activeLanguage}
+        href={"/fr"}
+        aria-label={dictionary.aria_label.languageFR}
+      >
+        FR
+      </Link>
+      <span>|</span>
+      <Link
+        href={"/en"}
+        className={styles.InactiveLanguage}
+        aria-label={dictionary.aria_label.languageEN}
+      >
+        EN
+      </Link>
+    </div>
   );
 }

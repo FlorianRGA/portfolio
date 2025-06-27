@@ -23,6 +23,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 /* -- root variables -- */
 :root {
   --background: #ffffff;
@@ -77,6 +81,26 @@ a {
   }
 }
 
+/* -- General -- */
+
+h1 {
+  font-size: var(--font-h1);
+}
+h2 {
+  font-size: var(--font-h2);
+}
+h3 {
+  font-size: var(--font-h3);
+}
+h4 {
+  font-size: var(--font-h4);
+}
+p {
+  font-size: var(--font-body);
+}
+small {
+  font-size: var(--font-small);
+}
 
 
 

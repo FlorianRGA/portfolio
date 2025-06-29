@@ -2,6 +2,13 @@
   "firstName": "Florian",
   "lastName": "Roche",
   "home": {
+    "navlinks": {
+      "home": "Accueil",
+      "about": "À propos",
+      "projects": "Projets",
+      "skills": "Compétences",
+      "contact": "Contact"
+    },
     "title": "Développeur Full-Stack",
     "description": "JavaScript • React • Node.js • Next.js •  Git • APIs REST"
   },

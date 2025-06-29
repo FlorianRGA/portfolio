@@ -3,5 +3,30 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+}
+
+.nav {
+  width: var(--container-width);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.navList {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.navButtons {
+  display: flex;
+  gap: 2rem;
+}
+.links li a:hover{
+  text-decoration: underline;
 }

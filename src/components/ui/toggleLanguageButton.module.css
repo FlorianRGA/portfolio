@@ -1,19 +1,3 @@
-/* .toggleLanguageButton {
-    display: flex;
-    cursor: pointer;
-    align-items: center;
-    border-radius: 0.7rem;
-    justify-content: space-between;
-    padding: 0.4rem;
-    width: 100%;
-    font-size: var(--font-body);
-}
-
-.svgWorld {
-    width: 2rem;
-    margin-right: 0.2rem;
-} */
-
 .container {
   display: flex;
   align-items: center;

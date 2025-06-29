@@ -2,12 +2,19 @@
   "firstName": "Florian",
   "lastName": "Roche",
   "home": {
-    "title": "Développeur Full-Stack",
-    "description": "JavaScript • React • Node.js • Next.js •  Git • APIs REST"
+    "navlinks": {
+      "home": "Home",
+      "about": "About",
+      "projects": "Projects",
+      "skills": "skills",
+      "contact": "Contact"
+    },
+    "title": "Full-Stack Developer",
+    "description": "JavaScript • React • Node.js • Next.js • Git • REST APIs"
   },
   "aria_label": {
-    "theme": "Activer/désactiver le thème clair/sombre",
-    "languageFR": "Changer pour le français",
-    "languageEN": "Changer pour l'anglais"
+    "theme": "Toggle light/dark theme",
+    "languageFR": "Switch to French",
+    "languageEN": "Switch to English"
   }
 }

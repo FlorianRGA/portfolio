@@ -29,6 +29,7 @@ li {
 
 /* -- root variables -- */
 :root {
+  --container-width: 90%;
   --background: #ffffff;
   --foreground: #171717;
   --font-h1: 2rem;
@@ -41,6 +42,7 @@ li {
 /* -- media queries --*/
 @media (min-width: 768px) {
   :root {
+    --container-width: 25%;
     --font-h1: 2.5rem;
     --font-h2: 2rem;
     --font-h3: 1.75rem;
@@ -51,6 +53,7 @@ li {
 }
 @media (min-width: 1024px) {
   :root {
+    --container-width: 50%;
     --font-h1: 3rem;
     --font-h2: 2.5rem;
     --font-h3: 2rem;
@@ -61,6 +64,7 @@ li {
 }
 @media (min-width: 1280px) {
   :root {
+    --container-width: 75%;
     --font-h1: 3.5rem;
     --font-h2: 3rem;
     --font-h3: 2.25rem;

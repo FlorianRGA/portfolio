@@ -1,0 +1,21 @@
+.toggleThemeButton {
+  display: flex;
+  align-items: center;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: none;
+}
+.lightIcon {
+  width: 32px;
+  height: 32px;
+    display: none;
+}
+.darkIcon {
+  width: 32px;
+  height: 32px;
+  fill: var(--foreground);
+}

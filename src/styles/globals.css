@@ -27,17 +27,28 @@ li {
   list-style: none;
 }
 
+
+
 /* -- root variables -- */
 :root {
   --container-width: 90%;
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --foreground: #ededed;
   --font-h1: 2rem;
   --font-h2: 1.75rem;
   --font-h3: 1.5rem;
   --font-h4: 1.25rem;
   --font-body: 1rem;
   --font-small: 0.875rem;
+}
+/* -- theme -- */
+body.light {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+body.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
 }
 /* -- media queries --*/
 @media (min-width: 768px) {
@@ -73,17 +84,6 @@ li {
     --font-small: 0.9rem;
   }
 }
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
 
 /* -- General -- */
 
@@ -102,7 +102,7 @@ h4 {
 p {
   font-size: var(--font-body);
 }
-small {
+.small {
   font-size: var(--font-small);
 }
 

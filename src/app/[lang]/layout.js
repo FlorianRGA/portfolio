@@ -1,7 +1,8 @@
-import '@/styles/globals.css';
-import { getDictionary } from '@/lib/getDictionaries';
-import ClientDictionaryProvider from '@/provider/clientDictionaryProvider';
-import React from 'react';
+import "@/styles/globals.css";
+import { getDictionary } from "@/lib/getDictionaries";
+import ClientDictionaryProvider from "@/provider/clientDictionaryProvider";
+import { ThemeProvider } from "@/provider/themeProvider";
+import React from "react";
 
 export default async function RootLayout({ children, params }) {
   const locale = await params;
@@ -11,8 +12,8 @@ export default async function RootLayout({ children, params }) {
   return (
     <html lang={lang}>
       <body>
-          <ClientDictionaryProvider dictionary={dictionary}>
-          {children}
+        <ClientDictionaryProvider dictionary={dictionary}>
+          <ThemeProvider>{children}</ThemeProvider>
         </ClientDictionaryProvider>
       </body>
     </html>

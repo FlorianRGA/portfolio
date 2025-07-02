@@ -12,10 +12,13 @@
 .lightIcon {
   width: 32px;
   height: 32px;
-    display: none;
 }
 .darkIcon {
   width: 32px;
   height: 32px;
   fill: var(--foreground);
 }
+.inactiveTheme {
+  display: none;
+}
+

@@ -1,13 +1,15 @@
 import styles from "@/components/ui/toggleThemeButton.module.css";
-
+import { useTheme } from "@/hooks/useTheme";
 export default function ToggleThemeButton({ dictionary }) {
+  const { theme, toggleTheme } = useTheme();
   return (
     <button
+      onClick={toggleTheme}
       className={styles.toggleThemeButton}
       aria-label={dictionary.aria_label.theme}
     >
       <svg
-        className={styles.lightIcon}
+        className={theme === "dark" ? styles.inactiveTheme : styles.lightIcon}
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +54,7 @@ export default function ToggleThemeButton({ dictionary }) {
         />
       </svg>
       <svg
-        className={styles.darkIcon}
+        className={theme === "dark" ? styles.darkIcon : styles.inactiveTheme}
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

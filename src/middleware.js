@@ -1,22 +1,25 @@
-import { NextResponse } from 'next/server';
+import { NextResponse } from "next/server";
 
-const SUPPORTED_LOCALES = ['fr'];
-const DEFAULT_LOCALE = 'en';
+const SUPPORTED_LOCALES = ["fr"];
+const DEFAULT_LOCALE = "en";
 
 export function middleware(request) {
   const pathname = request.nextUrl.pathname;
 
-  // Vérifie si la langue est supportée
-  const currentLocale = pathname.split('/')[1];
-  if (SUPPORTED_LOCALES.includes(currentLocale) || currentLocale === DEFAULT_LOCALE) {
+  // Check si le pathname correspond a une url de langue /fr /en
+  const currentLocale = pathname.split("/")[1];
+  if (
+    SUPPORTED_LOCALES.includes(currentLocale) ||
+    currentLocale === DEFAULT_LOCALE
+  ) {
     return NextResponse.next();
   }
 
-  // Récupère la langue préférée dans la requête
-  const acceptLanguage = request.headers.get('accept-language');
-  const preferredLocale = acceptLanguage?.split(',')[0]?.split('-')[0];
-  
-  // Détermine la langue préférée
+  // Récupère les langues du navigateurs de l'user
+  const acceptLanguage = request.headers.get("accept-language");
+  const preferredLocale = acceptLanguage?.split(",")[0]?.split("-")[0];
+
+  // si la premiere langue du navigateur est "fr" sinon par default "en"
   const locale = SUPPORTED_LOCALES.includes(preferredLocale)
     ? preferredLocale
     : DEFAULT_LOCALE;
@@ -26,5 +29,5 @@ export function middleware(request) {
 }
 
 export const config = {
-  matcher: ['/((?!_next|.*\\..*|api).*)'], // Ignorer les routes suivantes
+  matcher: ["/((?!_next|.*\\..*|api).*)"], // Ignorer les routes suivantes
 };

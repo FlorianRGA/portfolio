@@ -1,32 +1,40 @@
-.header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.nav {
-  width: var(--container-width);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 2rem;
-}
 .links {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 1rem;
 }
+
 .navList {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+  display: none;
 }
+
 .navButtons {
   display: flex;
   gap: 2rem;
 }
 .links li a:hover{
   text-decoration: underline;
+}
+
+/* @@ MEDIA QUERIES @@ */
+@media (min-width: 768px) {
+  .nav {
+  width: var(--container-width);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+  .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+  .navList {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  }
 }

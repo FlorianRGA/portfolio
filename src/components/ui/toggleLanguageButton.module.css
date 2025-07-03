@@ -6,8 +6,7 @@
 .svgWorld {
   width: 32px;
   height: 32px;
-  color: white;
-  stroke: #fff;
+  stroke: var(--foreground);
 }
 .activeLanguage {
   margin-left: 0.5rem;

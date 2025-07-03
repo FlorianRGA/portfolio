@@ -6,6 +6,7 @@ import React from "react";
 
 export function ThemeProvider({ children }) {
   const [theme, setTheme] = useState(null);
+  const [isMounted, setIsMounted] = useState(false);
   useEffect(() => {
     const localTheme = localStorage.getItem("theme");
     const windowTheme = window.matchMedia("(prefers-color-scheme: dark)")
@@ -15,10 +16,12 @@ export function ThemeProvider({ children }) {
     document.body.classList.remove("light", "dark");
     if (localTheme) {
       setTheme(localTheme);
+      setIsMounted(true);
       document.body.classList.add(localTheme);
     } else {
       localStorage.setItem("theme", windowTheme);
       setTheme(windowTheme);
+      setIsMounted(true);
       document.body.classList.add(windowTheme);
     }
   }, []);
@@ -35,9 +38,12 @@ export function ThemeProvider({ children }) {
       document.body.classList.add("dark");
     }
   }
+  if (!isMounted) return null;
   return (
-    <ThemeContext.Provider value={{ theme, toggleTheme }}>
+    <ThemeContext.Provider value={{ theme, toggleTheme, isMounted }}>
       {children}
     </ThemeContext.Provider>
   );
 }
+
+//I NEED TO REFACTOR THIS SHIT !! MUST BE A CLEANER WAY

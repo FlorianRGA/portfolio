@@ -17,6 +17,20 @@
   text-decoration: underline;
 }
 
+.socialIcons {
+  width: 2.5rem;
+  fill: var(--foreground);
+}
+.asideItems {
+ display: flex;
+ cursor: pointer;
+ padding: 1rem;
+ position: fixed;
+ top: 0.5rem;
+ left: 0.5rem;
+ z-index: 1;
+}
+
 /* @@ MEDIA QUERIES @@ */
 @media (min-width: 768px) {
   .nav {
@@ -37,4 +51,10 @@
   justify-content: space-between;
   width: 100%;
   }
+}
+
+
+/* //// */
+.header {
+  height: 600vh;
 }

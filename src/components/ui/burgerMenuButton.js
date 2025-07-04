@@ -1,10 +1,18 @@
 import styles from "@/components/ui/burgerMenuButton.module.css";
 import { useState } from "react";
 
-export default function BurgerMenuButton({ menuItems, extraItems }) {
+export default function BurgerMenuButton({
+  asideItems,
+  menuItems,
+  extraItems,
+}) {
   const [isOpen, setIsOpen] = useState(false);
+  const body = document.getElementsByTagName("body")[0];
+  isOpen ? body.classList.add("open") : body.classList.remove("open");
+
   return (
     <div className={styles.menuBurger}>
+      {asideItems}
       <button
         type="button"
         className={styles.burgerBtn}
@@ -23,3 +31,4 @@ export default function BurgerMenuButton({ menuItems, extraItems }) {
     </div>
   );
 }
+// Nav bar disapear on scroll down but come back when scrolling up ? Todo maybe ?

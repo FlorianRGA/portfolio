@@ -2,12 +2,20 @@ import styles from "@/components/header.module.css";
 import ToggleLanguageButton from "@/components/ui/toggleLanguageButton";
 import ToggleThemeButton from "@/components/ui/toggleThemeButton";
 import BurgerMenuButton from "@/components/ui/burgerMenuButton";
+import LinkedinIcon from "@/components/ui/icons/linkedinIcon";
+import GithubIcon from "@/components/ui/icons/githubIcon";
+import TempLogo from "@/components/ui/icons/tempLogo";
 
 export default function Header({ dictionary }) {
   return (
     <header className={styles.header}>
       <nav className={styles.nav}>
         <BurgerMenuButton
+          asideItems={
+            <div className={styles.asideItems}>
+              <ToggleThemeButton dictionary={dictionary} />
+            </div>
+          }
           menuItems={
             <div>
               <li>
@@ -30,10 +38,19 @@ export default function Header({ dictionary }) {
           extraItems={
             <div>
               <li>
-                <a href="#"></a>
+                <a href="#">
+                  <TempLogo />
+                </a>
               </li>
               <li>
-                <a href="#"></a>
+                <a href="#">
+                  <LinkedinIcon className={styles.socialIcons} />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <GithubIcon className={styles.socialIcons} />
+                </a>
               </li>
             </div>
           }

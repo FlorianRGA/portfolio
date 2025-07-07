@@ -8,6 +8,13 @@
 .navList {
   display: none;
 }
+.nav {
+  background-color: var(--background);
+  height: 5rem;
+  width: 100%;
+  border-bottom: 1px solid var(--foreground);
+  z-index: 1;
+}
 
 .navButtons {
   display: flex;
@@ -21,15 +28,6 @@
   width: 2.5rem;
   fill: var(--foreground);
 }
-.asideItems {
- display: flex;
- cursor: pointer;
- padding: 1rem;
- position: fixed;
- top: 0.5rem;
- left: 0.5rem;
- z-index: 1;
-}
 
 /* @@ MEDIA QUERIES @@ */
 @media (min-width: 768px) {
@@ -39,12 +37,12 @@
   align-items: center;
   justify-content: space-between;
   margin-top: 2rem;
+  position: initial;
 }
   .header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
   .navList {
   display: flex;

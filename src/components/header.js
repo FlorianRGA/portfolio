@@ -11,11 +11,13 @@ export default function Header({ dictionary }) {
     <header className={styles.header}>
       <nav className={styles.nav}>
         <BurgerMenuButton
-          asideItems={
+          asideTopItems={
             <div className={styles.asideItems}>
               <ToggleThemeButton dictionary={dictionary} />
             </div>
           }
+          closedMiddleTopItems={<TempLogo className={styles.socialIcons} />}
+          openMiddleTopItems={<ToggleLanguageButton dictionary={dictionary} />}
           menuItems={
             <div>
               <li>
@@ -39,12 +41,12 @@ export default function Header({ dictionary }) {
             <div>
               <li>
                 <a href="#">
-                  <TempLogo />
+                  <LinkedinIcon className={styles.socialIcons} />
                 </a>
               </li>
               <li>
                 <a href="#">
-                  <LinkedinIcon className={styles.socialIcons} />
+                  <TempLogo />
                 </a>
               </li>
               <li>

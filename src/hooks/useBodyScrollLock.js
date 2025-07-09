@@ -5,7 +5,6 @@ export default function useBodyScrollLock(isOpen, isMobile) {
   useEffect(() => {
     const body = document.getElementsByTagName("body")[0];
     const nav = document.getElementsByTagName("nav")[0];
-    console.log(scrollPos.current);
     if (!isMobile) {
       body.classList.remove("body--locked");
       nav.style.top = "";

@@ -14,6 +14,21 @@
   width: 32px;
   height: 32px;
   fill: var(--foreground);
+  transition: transform 300ms;
 }
+.activeTheme:hover {
+  transform: rotate(-25deg);
+}
+.activeThemeAnimate {
+  animation: 300ms rotate ease-in-out forwards;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
 
-
+  }
+  to {
+    transform: rotate(180deg);
+  
+  }
+}

@@ -112,3 +112,9 @@ p {
   position: fixed;
   overflow-y: hidden;
 }
+
+.container{
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 1rem;
+}

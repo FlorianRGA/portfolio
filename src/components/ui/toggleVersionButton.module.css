@@ -1,0 +1,16 @@
+.button {
+    height: 4rem;
+    width: 16rem;
+    border-radius: 4rem;
+    display: flex;
+    border: none;
+    overflow: hidden;
+    flex-direction: column;
+}
+.button div span {
+ font-size: 0.5rem;
+ position: relative;
+}
+.layer1 {
+    
+}

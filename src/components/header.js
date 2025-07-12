@@ -21,19 +21,19 @@ export default function Header({ dictionary }) {
           menuItems={
             <div>
               <li>
-                <a href="#>"> {dictionary.home.navlinks.home} </a>
+                <a href="#>"> {dictionary.header.navbar_links.home} </a>
               </li>
               <li>
-                <a href="#>"> {dictionary.home.navlinks.about} </a>
+                <a href="#>"> {dictionary.header.navbar_links.about} </a>
               </li>
               <li>
-                <a href="#>"> {dictionary.home.navlinks.projects} </a>
+                <a href="#>"> {dictionary.header.navbar_links.projects} </a>
               </li>
               <li>
-                <a href="#>"> {dictionary.home.navlinks.skills} </a>
+                <a href="#>"> {dictionary.header.navbar_links.skills} </a>
               </li>
               <li>
-                <a href="#>"> {dictionary.home.navlinks.contact} </a>
+                <a href="#>"> {dictionary.header.navbar_links.contact} </a>
               </li>
             </div>
           }
@@ -60,19 +60,19 @@ export default function Header({ dictionary }) {
         <ul className={styles.navList}>
           <div className={styles.links}>
             <li>
-              <a href="#>"> {dictionary.home.navlinks.home} </a>
+              <a href="#>"> {dictionary.header.navbar_links.header} </a>
             </li>
             <li>
-              <a href="#>"> {dictionary.home.navlinks.about} </a>
+              <a href="#>"> {dictionary.header.navbar_links.about} </a>
             </li>
             <li>
-              <a href="#>"> {dictionary.home.navlinks.projects} </a>
+              <a href="#>"> {dictionary.header.navbar_links.projects} </a>
             </li>
             <li>
-              <a href="#>"> {dictionary.home.navlinks.skills} </a>
+              <a href="#>"> {dictionary.header.navbar_links.skills} </a>
             </li>
             <li>
-              <a href="#>"> {dictionary.home.navlinks.contact} </a>
+              <a href="#>"> {dictionary.header.navbar_links.contact} </a>
             </li>
           </div>
           <div className={styles.navButtons}>
@@ -85,11 +85,6 @@ export default function Header({ dictionary }) {
           </div>
         </ul>
       </nav>
-      <h1>
-        {/* {dictionary.firstName} {dictionary.lastName} <br />
-        {dictionary.home.title} */}
-      </h1>
-      <h2>{dictionary.home.description}</h2>
     </header>
   );
 }

@@ -36,7 +36,7 @@ export default function ToggleLanguageButton({ dictionary }) {
           pathname === "/fr" ? styles.activeLanguage : styles.InactiveLanguage
         }
         href={"/fr"}
-        aria-label={dictionary.aria_label.languageFR}
+        aria-label={dictionary.aria_label.language_FR}
       >
         FR
       </Link>
@@ -46,7 +46,7 @@ export default function ToggleLanguageButton({ dictionary }) {
         className={
           pathname === "/en" ? styles.activeLanguage : styles.InactiveLanguage
         }
-        aria-label={dictionary.aria_label.languageEN}
+        aria-label={dictionary.aria_label.language_EN}
       >
         EN
       </Link>

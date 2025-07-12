@@ -1,20 +1,22 @@
 {
-  "firstName": "Florian",
-  "lastName": "Roche",
-  "home": {
-    "navlinks": {
+  "first_name": "Florian",
+  "last_name": "Roche",
+  "header": {
+    "navbar_links": {
       "home": "Accueil",
       "about": "À propos",
       "projects": "Projets",
       "skills": "Compétences",
       "contact": "Contact"
-    },
-    "title": "Développeur Full-Stack",
-    "description": "JavaScript • React • Node.js • Next.js •  Git • APIs RESTJavaScript • React • Node.js • Next.js •  Git • APIs RESTJavaScript • React • Node.js • Next.js •  Git • APIs RESTJavaScript • React • Node.js • Next.js •  Git • APIs RESTJavaScript • React • Node.js • Next.js •  Git • APIs RESTJavaScript • React • Node.js • Next.js •  Git • APIs RESTJavaScript • React • Node.js • Next.js •  Git • APIs RESTJavaScript • React • Node.js • Next.js •  Git • APIs RESTJavaScript • React • Node.js • Next.js •  Git • APIs RESTJavaScript • React • Node.js • Next.js •  Git • APIs RESTJavaScript • React • Node.js • Next.js •  Git • APIs RESTJavaScript • React • Node.js • Next.js •  Git • APIs RESTJavaScript • React • Node.js • Next.js •  Git • APIs RESTJavaScript • React • Node.js • Next.js •  Git • APIs RESTJavaScript • React • Node.js • Next.js •  Git • APIs RESTJavaScript • React • Node.js • Next.js •  Git • APIs RESTJavaScript • React • Node.js • Next.js •  Git • APIs RESTJavaScript • React • Node.js • Next.js •  Git • APIs RESTJavaScript • React • Node.js • Next.js •  Git • APIs RESTJavaScript • React • Node.js • Next.js •  Git • APIs RESTJavaScript • React • Node.js • Next.js •  Git • APIs RESTJavaScript • React • Node.js • Next.js •  Git • APIs RESTJavaScript • React • Node.js • Next.js •  Git • APIs RESTJavaScript • React • Node.js • Next.js •  Git • APIs RESTJavaScript • React • Node.js • Next.js •  Git • APIs RESTJavaScript • React • Node.js • Next.js •  Git • APIs RESTJavaScript • React • Node.js • Next.js •  Git • APIs RESTJavaScript • React • Node.js • Next.js •  Git • APIs RESTJavaScript • React • Node.js • Next.js •  Git • APIs RESTJavaScript • React • Node.js • Next.js •  Git • APIs RESTJavaScript • React • Node.js • Next.js •  Git • APIs REST"
+    }
+  },
+  "hero_section": {
+    "hero_title": "Développeur Full-Stack Web et web mobile",
+    "hero_description": "JavaScript • React • Node.js • Next.js •  Git • APIs RESTJavaScript "
   },
   "aria_label": {
     "theme": "Activer/désactiver le thème clair/sombre",
-    "languageFR": "Changer pour le français",
-    "languageEN": "Changer pour l'anglais"
+    "language_FR": "Changer la langue pour le français",
+    "language_EN": "Changer la langue pour l'anglais"
   }
 }

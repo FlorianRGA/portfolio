@@ -2,11 +2,15 @@
 
 import { useDictionary } from "@/context/dictionaryContext";
 import Header from "@/components/header";
+import HeroSection from "@/components/heroSection";
 export default function HomePage() {
   const dictionary = useDictionary();
   return (
-    <main>
+    <>
       <Header dictionary={dictionary} />
-    </main>
+      <main className="container">
+        <HeroSection dictionary={dictionary} />
+      </main>
+    </>
   );
 }

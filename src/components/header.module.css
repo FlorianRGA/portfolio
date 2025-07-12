@@ -38,6 +38,7 @@
   justify-content: space-between;
   margin-top: 2rem;
   position: initial;
+  padding: 0 1rem;
 }
   .header {
   display: flex;
@@ -52,7 +53,7 @@
 }
 
 
-/* //// */
+/* ////
 .header {
   height: 600vh;
-}
+} */

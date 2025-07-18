@@ -1,0 +1,71 @@
+/* ----TEMP---- */
+.faceIcon {
+    width: 1rem;
+    height: 1%;
+}
+
+/* --- SECTION -- */
+.section {
+    margin-top: 15%;
+}
+/* --- LEFT SECTION -- */
+.leftSection {
+    width: 60%;
+}
+.leftSection h1{
+    line-height: 5rem;
+}
+.leftSection p{
+    margin-top: .2rem;
+}
+
+.subH1 {
+    font-size: var(--font-h3);
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* --- DESCRIPTION -- */
+
+.description {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+}
+/* --- BUTTON -- */
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.button {
+    display: flex;
+    align-items: center;
+    color: var(--background);
+    padding: 1.1rem;
+    font-size: var(--font-body);
+    background-color: var(--foreground);
+    border-radius: 2rem;
+    transition: all 0.2s ease-in-out;
+}
+.button:hover {
+    background-color: var(--background);
+    color: var(--foreground);
+    fill: var(--foreground);
+    transition: all 0.2s ease-in-out;
+}
+
+.arrowIcon {
+    transition: all 0.2s ease-in-out;
+    height: var(--font-body);
+    margin-left: 1rem;
+}
+.button:hover .arrowIcon {
+    transition: all 0.2s ease-in-out;
+    margin-left: 2rem;
+}

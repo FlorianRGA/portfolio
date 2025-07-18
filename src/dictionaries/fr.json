@@ -12,7 +12,9 @@
   },
   "hero_section": {
     "hero_title": "Développeur Full-Stack Web et web mobile",
-    "hero_description": "JavaScript • React • Node.js • Next.js •  Git • APIs RESTJavaScript "
+    "hero_subtitle": "JavaScript • React • Node.js • Next.js • Git • REST APIs",
+    "hero_description": "Développeur débutant, passionné et déterminé, je suis prêt à rejoindre une équipe dynamique pour mettre en pratique mes compétences et continuer à apprendre. Motivé à contribuer activement à vos projets web et mobile, je saurai m’adapter et évoluer rapidement.",
+    "hero_cta": "Contacter moi pour plus d'informations"
   },
   "aria_label": {
     "theme": "Activer/désactiver le thème clair/sombre",

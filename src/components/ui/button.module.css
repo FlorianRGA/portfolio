@@ -1,0 +1,7 @@
+.button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  border: solid 1px var(--foreground);
+  border-radius: 2rem;
+}

@@ -1,22 +1,22 @@
 {
-  "firstName": "Florian",
-  "lastName": "Roche",
-  "home": {
+  "first_name": "Florian",
+  "last_name": "Roche",
+  "header": {
     "navbar_links": {
       "home": "Home",
-      "about": "About Me",
+      "about": "About",
       "projects": "Projects",
       "skills": "Skills",
       "contact": "Contact"
-    },
-    "hero_section": {
-      "hero_title": "Full-Stack Web & Mobile Developer",
-      "hero_description": "JavaScript • React • Node.js • Next.js • Git • REST APIs"
     }
   },
+  "hero_section": {
+    "hero_title": "Full-Stack Web and Mobile Web Developer",
+    "hero_description": "JavaScript • React • Node.js • Next.js • Git • REST APIs"
+  },
   "aria_label": {
-    "theme": "Toggle light and dark mode",
-    "languageFR": "Switch to French",
-    "languageEN": "Switch to English"
+    "theme": "Toggle light/dark theme",
+    "language_FR": "Switch language to French",
+    "language_EN": "Switch language to English"
   }
 }

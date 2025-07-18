@@ -60,7 +60,7 @@ export default function Header({ dictionary }) {
         <ul className={styles.navList}>
           <div className={styles.links}>
             <li>
-              <a href="#>"> {dictionary.header.navbar_links.header} </a>
+              <a href="#>"> {dictionary.header.navbar_links.home} </a>
             </li>
             <li>
               <a href="#>"> {dictionary.header.navbar_links.about} </a>

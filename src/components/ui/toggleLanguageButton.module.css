@@ -10,11 +10,13 @@
 .activeLanguage {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+  color: var(--foreground);
 }
 .InactiveLanguage {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   opacity: 0.5;
+  color: var(--foreground);
 }
 .InactiveLanguage:hover {
   opacity: 1;

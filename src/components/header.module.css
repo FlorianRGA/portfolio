@@ -20,8 +20,8 @@
   display: flex;
   gap: 2rem;
 }
-.links li a:hover{
-  text-decoration: underline;
+.links li a{
+  color: var(--foreground);
 }
 
 .socialIcons {
